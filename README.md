@@ -7,4 +7,5 @@ One aim of my PhD project is to work with experimentalists to develop a symbioti
 The coding would consist of working with ASE ("Atomic Simulation Environment") and its Python interface to perform calculations in Gaussian, summarise the wanted results and present them using numpy and matplotlib.
 
 https://wiki.fysik.dtu.dk/ase/
+
 https://gaussian.com/gaussian16/
