@@ -76,7 +76,7 @@ def vib(struct, proj_path):
     ir = Infrared(struct)
     ir.clean()
     ir.run()
-
+    ir.write_spectrum('ir_spectra.dat')
     print("Calculation of vibrational frequencies completed!\nPrinting spectrum...")
 
     return struct, ir.get_spectrum()

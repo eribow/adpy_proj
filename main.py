@@ -30,3 +30,4 @@ struct, spectrum = vib(struct, proj_path)
 
 # spectrum given as a list of lists with frequencies and intensities
 plt.plot(spectrum[0], spectrum[1])
+plt.show()
