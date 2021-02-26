@@ -74,9 +74,10 @@ def vib(struct, proj_path):
                     )
     #struct.get_potential_energy()
     ir = Infrared(struct)
-    ir.clean()
     ir.run()
-    ir.write_spectrum('ir_spectra.dat')
+    ir.write_spectra('ir_spectra.dat')
+    spectrum = ir.get_spectrum()
+    ir.clean() # to get rid of disturbing .pckl files cluttering the directory
     print("Calculation of vibrational frequencies completed!\nPrinting spectrum...")
 
-    return struct, ir.get_spectrum()
+    return struct, spectrum
